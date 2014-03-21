@@ -2,6 +2,9 @@
  * Variables to be used throughout the project
  */
 
+// Normalize support for IE6 and IE7
+//$legacy_browser_support: true;
+
 // Fonts
 $font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-key: Georgia, 'Times New Roman' serif;

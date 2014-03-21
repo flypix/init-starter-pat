@@ -13,7 +13,7 @@ module.exports = {
 		files: [{
 			expand: true,
 			cwd: config.img.src,
-			src: ['**/*.{png,jpg,gif}'],
+			src: ['**/*.{png,jpg,gif}', '!sprite/'],
 			dest: config.img.dest
 		}]
 	}

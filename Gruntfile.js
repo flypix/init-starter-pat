@@ -18,6 +18,7 @@ var loadConfig = function (path) {
 	glob.sync('*', { cwd: path }).forEach(function (option) {
 		key = option.replace(/\.js$/,'');
 		object[key] = require(path + option);
+		//console.log("key: " + key + ", " + "object[key]: " + object[key] );
 	});
 
 	return object;
@@ -57,6 +58,7 @@ module.exports = function (grunt) {
 	// A task for development
 	grunt.registerTask('dev', [
 		'jshint',
+		'sprite',
 		'sass:dev',
 		'copy',
 		'requirejs',
@@ -67,6 +69,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('build', [
 		'jshint',
 		'modernizr',
+		'sprite',
 		'sass:build',
 		'imagemin',
 		'copy',
