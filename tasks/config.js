@@ -55,11 +55,11 @@ module.exports = {
 	},
 
 	// Sprites
-	sprite : {
-		src: 'img/sprite/',
-		dest: 'dist/img/sprite/',
-		spriteCSS: 'scss/modules/sprite/'
-	}
+	sprite: {
+		src: 'img/sprite/*.png',
+		dest: 'dist/img/sprite/sprite.png',
+		spriteCSS: 'scss/modules/_sprite.scss'
+	},
 
 	tests: {
 		src: 'test/specs/**/*spec.js',
